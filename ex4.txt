@@ -1,0 +1,13 @@
+To automate the process of creating and configuring of our infrastructure, we use Infrastructure as Code tools such as Terraform and Ansible
+we can use Terraform to define our infrastructure in code, like defining the resources we need, 
+such as EC2 instances,databases, and Load Balancers. Next we install and configure the web server software.
+
+Following that we use AWS Database Migration Service to migrate our website data to AWS. 
+Once our infrastructure is defined and configured, and your data is migrated, we can test our website to ensure everything is 
+working correctly.
+Once everything is tested and working correctly, we can deploy our website to the defined AWS infrastructure.
+
+To ensure that our application is Fast, Fault-tolerant, and Adaptive to average load after migrating your website to AWS cloud
+we can use an auto-scaling group, which automatically adjust the number of EC2 instances running our website in response to changes 
+in traffic. we can also use Elastic Load Balancing, we can distribute incoming traffic across multiple instances of our website
+finally we can use AWS CloudWatch to monitor our website's performance, including CPU utilization, memory usage, and network traffic. 
