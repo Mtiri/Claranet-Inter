@@ -1,0 +1,16 @@
+00**0  tar -czf /home/backup.tar /home/user && scp /home/user_backup.tar.gz user@192.168.1.100:/remote/backup/directory/
+
+Or
+
+
+00**7  tar -czf /home/user_backup.tar.gz /home/user && scp /home/user_backup.tar.gz user@192.168.1.100:/remote/backup/directory/
+
+first 0: min 0
+second 0: hour 0
+first *: day of the month (not set)
+second *: the month (not set)
+third 0 or 7: day of the week (sunday)
+
+tar : we create an archive ("backup.tar") of the folder "/home/user" folder.
+
+scp : we secure copie the backup file to the remote server the username "user" 
