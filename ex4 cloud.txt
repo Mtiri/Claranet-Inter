@@ -1,0 +1,21 @@
+To automate the process of creating and configuring of our infrastructure, we use Infrastructure as Code tools such as Terraform and Ansible
+we can use Terraform to define our infrastructure in code, like defining the resources we need, first we need to create a CloudFormation 
+template in JSON or YAML, then in the template, we define the resources we need for our WordPress application, such as EC2 instances,databases,
+and Load Balancers next we define the parameters (last version of wordpress) following that we Launch the CloudFormation stack and enter values for 
+the parameters we defined. Next we install and configure the web server software.
+
+Following that we use AWS Database Migration Service to migrate our website data to AWS. first we Choose our source and target databases
+which is the target endpoint for our migration.
+we create a migration task that defines the configuration for our migration, including the source and target endpoints, 
+the replication instance (created in the same region), and any other settings that we want to customize.
+Next we create a migration task in the AWS Management Console then trigger the migration.
+After the migration is complete, we can test the target database to ensure that our website is functioning properly.
+
+Once our infrastructure is defined and configured, and your data is migrated, we can test our website to ensure everything is 
+working correctly and perform some distributed load testing .
+Once everything is tested and working correctly, we can deploy our website to the defined AWS infrastructure.
+
+To ensure that our application is Fast, Fault-tolerant, and Adaptive to average load after migrating your website to AWS cloud
+we can use an auto-scaling group, which automatically adjust the number of EC2 instances running our website in response to changes 
+in traffic. we can also use Elastic Load Balancing, we can distribute incoming traffic across multiple instances of our website
+finally we can use AWS CloudWatch to monitor our website's performance, including CPU utilization, memory usage, and network traffic. 
